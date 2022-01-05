@@ -45,7 +45,7 @@
     display: none;
   }
   .portfolio {
-    margin: -2vh auto 8vh !important;
+    margin: 6vh auto 8vh !important;
   }
   .portfolio .portfolio__list > * {
     -webkit-box-flex: 1;
