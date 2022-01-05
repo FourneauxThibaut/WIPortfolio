@@ -44,9 +44,6 @@
   main .portfolio h2::after {
     display: none;
   }
-  .portfolio {
-    margin: 6vh auto 8vh !important;
-  }
   .portfolio .portfolio__list > * {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 50%;
@@ -82,9 +79,6 @@
     width: auto !important;
     z-index: -2;
   }
-  main .portfolio {
-    margin: -6vh auto 8vh !important;
-  }
   main .contact {
     margin: 0.1vh auto 3vh !important;
   }
@@ -99,9 +93,6 @@
 @media (max-width: 700px) {
   header nav .navigation {
     font-size: 1.1rem !important;
-  }
-  main .portfolio {
-    margin: -7vh auto 6vh !important;
   }
   main .portfolio .portfolio__list {
     -webkit-box-orient: vertical !important;
@@ -129,9 +120,6 @@
   }
   main .presentation div .presentation__resume .presentation__resume__button {
     font-size: 1.5rem !important;
-  }
-  main .portfolio {
-    margin: 2vh auto 6vh !important;
   }
 }
 
@@ -653,7 +641,7 @@ main .presentation .presentation__picture img {
 }
 
 main .portfolio {
-  margin: 6vh auto 17vh;
+  margin: 4vh auto 17vh;
   width: 70%;
   font-size: 1.2rem;
 }

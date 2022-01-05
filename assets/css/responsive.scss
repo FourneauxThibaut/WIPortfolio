@@ -45,7 +45,6 @@
         }
     }
     .portfolio{
-        margin: 6vh auto 8vh !important;
 
         .portfolio__list > * {
             flex: 1 1 50%;
@@ -88,9 +87,6 @@
                 }
             }
         }
-        .portfolio{
-            margin: -6vh auto 8vh !important;
-        }
         .contact{
             margin: 0.1vh auto 3vh !important;
         }
@@ -113,7 +109,6 @@
     }
     main{
         .portfolio{
-            margin: -7vh auto 6vh !important;
     
             .portfolio__list{
                 flex-direction: column !important;
@@ -147,9 +142,6 @@
                     font-size: 1.5rem !important;
                 }
             }
-        }
-        .portfolio{
-            margin: 2vh auto 6vh !important;
         }
     }
 }
