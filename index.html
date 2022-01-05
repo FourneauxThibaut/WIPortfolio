@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="on est la">
+    <meta name="theme-color" content="#D16D4A">
+    <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'none'"> -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/svg/profile-picture.svg" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="social">
+                <li class="social__github"> 
+                    <a href="https://github.com/FourneauxThibaut" target="_blank" rel="noopener">
+                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    </a>
+                </li>
+                <li class="social__linkedin">                        
+                    <a href="https://www.linkedin.com/in/fourneaux-thibaut/" target="_blank" rel="noopener">
+                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </a>
+                </li>
+                <li class="social__npx">                        
+                    <a id="npm">
+                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>npm</title><path d="M1.763 0C.786 0 0 .786 0 1.763v20.474C0 23.214.786 24 1.763 24h20.474c.977 0 1.763-.786 1.763-1.763V1.763C24 .786 23.214 0 22.237 0zM5.13 5.323l13.837.019-.009 13.836h-3.464l.01-10.382h-3.456L12.04 19.17H5.113z"/></svg>
+                    </a>
+                </li>
+                <li class="social__codepen">                        
+                    <a href="https://codepen.io/fourneauxthibaut" target="_blank" rel="noopener">
+                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>CodePen</title><path d="M18.144 13.067v-2.134L16.55 12zm1.276 1.194a.628.628 0 01-.006.083l-.005.028-.011.053-.01.031c-.005.016-.01.031-.017.047l-.014.03a.78.78 0 01-.021.043l-.019.03a.57.57 0 01-.08.1l-.026.025a.602.602 0 01-.036.03l-.029.022-.01.008-6.782 4.522a.637.637 0 01-.708 0L4.864 14.79l-.01-.008a.599.599 0 01-.065-.052l-.026-.025-.032-.034-.021-.028a.588.588 0 01-.067-.11l-.014-.031a.644.644 0 01-.017-.047l-.01-.03c-.004-.018-.008-.036-.01-.054l-.006-.028a.628.628 0 01-.006-.083V9.739c0-.028.002-.055.006-.083l.005-.027.011-.054.01-.03a.574.574 0 01.12-.217l.031-.034.026-.025a.62.62 0 01.065-.052l.01-.008 6.782-4.521a.638.638 0 01.708 0l6.782 4.521.01.008.03.022.035.03c.01.008.017.016.026.025a.545.545 0 01.08.1l.019.03a.633.633 0 01.021.043l.014.03c.007.016.012.032.017.047l.01.031c.004.018.008.036.01.054l.006.027a.619.619 0 01.006.083zM12 0C5.373 0 0 5.372 0 12 0 18.627 5.373 24 12 24c6.628 0 12-5.372 12-12 0-6.627-5.372-12-12-12m0 10.492L9.745 12 12 13.51 14.255 12zm.638 4.124v2.975l4.996-3.33-2.232-1.493zm-6.272-.356l4.996 3.33v-2.974l-2.764-1.849zm11.268-4.52l-4.996-3.33v2.974l2.764 1.85zm-6.272-.356V6.41L6.366 9.74l2.232 1.493zm-5.506 1.549v2.134L7.45 12Z"/></svg>
+                    </a>
+                </li>
+                <li class="social__discord">                        
+                    <a href="https://discordapp.com/users/182980876248809473" target="_blank" rel="noopener">
+                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Discord</title><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg>
+                    </a>
+                </li>
+            </ul>
+            <ul class="navigation">
+                <li class="navigation__profile">
+                    <a href="#" class="current"> Profile </a>
+                </li>
+                <li class="navigation__projects">
+                    <a href="#project"> Projects </a>
+                </li>
+                <li class="navigation__contact">
+                    <a href="#contact"> Contact </a>
+                </li>
+                <li class="navigation__theme">
+                    <div class="toggleOn" id="toggleTheme">
+                        <i class="fas fa-moon navigation__theme--moon" id="moon" onclick="toggleThemeButton()"></i>
+                        <i class="fas fa-sun navigation__theme--sun" id="sun" onclick="toggleThemeButton()"></i>
+                        <div class="ball"></div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="presentation" id="profile">
+            <div>
+                <section class="presentation__resume">
+                    <h2>Hi, my name is</h2>
+                    <h1>Fourneaux Thibaut.<br><span>I build things for the web.</span></h1>
+                    <p>I am a junior backend developer trainee who likes to invest in various projects and keep on learning</p>
+                    <a class="presentation__resume__button" href="#">Check out my resume!</a>
+                </section>
+                <section class="presentation__picture">
+                    <img loading="lazy" src="./assets/storage/svg/profile-picture.svg" alt="Profile Picture">
+                </section>
+            </div>
+        </section>
+        <section class="portfolio" id="project">
+            <h2>Things i have built</h2>
+            <p class="portfolio__subtitle">Featured Project</p>
+            <ul class="portfolio__list">
+                <li>
+                    <article class="portfolio__list__item">
+                        <div class="portfolio__list__item__title">
+                            <h3>Hangman</h3>
+                        </div>
+                        <p>
+                            hangman game made as a challenge to validate our skills in javascript.<br>
+                            my focus was to make it user friendly with tips and clickable link on the hidden word
+                        </p>
+                        <div class="portfolio__list__item__footer">
+                            <ul class="portfolio__list__item__footer__tag">
+                                <li>svg animation</li>
+                                <li>javascript</li>
+                                <li>challenge</li>
+                                <li>solo</li>
+                            </ul>
+                            <ul class="portfolio__list__item__footer__link">
+                                <li>
+                                    <a href="https://github.com/FourneauxThibaut/Hangman" target="_blank" rel="noopener">
+                                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://fourneauxthibaut.github.io/Hangman/" target="_blank" rel="noopener">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" /><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" /></svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="portfolio__list__item">
+                        <div class="portfolio__list__item__title">
+                            <h3>PewPew</h3>
+                        </div>
+                        <p>simple game made with javascript to learn html5 canvas element at becode</p>
+                        <div class="portfolio__list__item__footer">
+                            <ul class="portfolio__list__item__footer__tag">
+                                <li>canvas</li>
+                                <li>javascript</li>
+                                <li>solo</li>
+                            </ul>
+                            <ul class="portfolio__list__item__footer__link">
+                                <li>
+                                    <a href="https://github.com/FourneauxThibaut/PewPew" target="_blank" rel="noopener">
+                                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://fourneauxthibaut.github.io/PewPew/" target="_blank" rel="noopener">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" /><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" /></svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="portfolio__list__item">
+                        <div class="portfolio__list__item__title">
+                            <h3>Wood's burgers</h3>
+                        </div>
+                        <p>
+                            restaurant project is a group project of 4 person using bootstrap.<br>
+                            my work was done on the header, the footer and the pictures page, i also hanged the manage the github repository
+                        </p>
+                        <div class="portfolio__list__item__footer">
+                            <ul class="portfolio__list__item__footer__tag">
+                                <li>bootstrap</li>
+                                <li>challenge</li>
+                                <li>team of 4</li>
+                            </ul>
+                            <ul class="portfolio__list__item__footer__link">
+                                <li>
+                                    <a href="https://github.com/FourneauxThibaut/restaurant-css-framework" target="_blank" rel="noopener">
+                                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://fourneauxthibaut.github.io/restaurant-css-framework/" target="_blank" rel="noopener">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" /><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" /></svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="portfolio__list__item">
+                        <div class="portfolio__list__item__title">
+                            <h3>COGIP_Accounting</h3>
+                        </div>
+                        <p>PHP accounting project made as trainee at becode, build with an homemade mvc</p>
+                        <div class="portfolio__list__item__footer">
+                            <ul class="portfolio__list__item__footer__tag">
+                                <li>mysql</li>
+                                <li>php</li>
+                                <li>mvc</li>
+                                <li>challenge</li>
+                                <li>team of 4</li>
+                            </ul>
+                            <ul class="portfolio__list__item__footer__link">
+                                <li>
+                                    <a href="https://github.com/FourneauxThibaut/COGIP_Accounting" target="_blank" rel="noopener">
+                                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="portfolio__list__item">
+                        <div class="portfolio__list__item__title">
+                            <h3>Blabla-T Node Chat</h3>
+                        </div>
+                        <p>Real time chat app done in the training about nodejs at becode</p>
+                        <div class="portfolio__list__item__footer">
+                            <ul class="portfolio__list__item__footer__tag">
+                                <li>nodejs</li>
+                                <li>express</li>
+                                <li>socket.io</li>
+                                <li>challenge</li>
+                                <li>team of 2</li>
+                            </ul>
+                            <ul class="portfolio__list__item__footer__link">
+                                <li>
+                                    <a href="https://github.com/FourneauxThibaut/node-Chat" target="_blank" rel="noopener">
+                                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+        </section> 
+        <section class="contact" id="contact">
+            <h2>What's Next?</h2>
+            <h3>Get In Touch</h3>
+            <p>Although I'm currently on a junior web developer training at BeCode. I'm looking for an internship and opportunities in the coming months. my inbox is always open, so don't hesitate to write me!</p>
+            <a href="mailto:thibaut.fourneaux@outlook.com">thibaut.fourneaux@outlook.com</a>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <p>Made by <a href="https://github.com/FourneauxThibaut">Fourneaux Thibaut</a> Jan. 2021</p>
+    </footer>
+    <script defer src="https://kit.fontawesome.com/9db982eb0b.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.9/dist/sweetalert2.all.min.js"></script>
+    <script defer src="./assets/js/theme.js"></script>
+    <script defer src="./assets/js/app.js"></script>
+</body>
+</html> 

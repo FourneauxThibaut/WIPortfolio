@@ -1,0 +1,199 @@
+// header
+@media (max-width: 1400px){
+    header nav {
+        .navigation{
+            width: 55% !important;
+        }
+    }
+}
+
+@media (max-width: 1300px){
+    main{
+        .presentation div{
+        
+            .presentation__picture{
+
+                img{
+                    width: 350px !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1100px){
+    header nav {
+        .social{
+            min-width: 35% !important;
+        }
+        .navigation{
+            width: 60% !important;
+        }
+    }
+    main{
+        .presentation div{
+        
+            .presentation__picture{
+
+                img{
+                    width: 300px !important;
+                }
+            }
+        }
+        .portfolio h2::after{
+            display: none;
+        }
+    }
+    .portfolio{
+
+        .portfolio__list > * {
+            flex: 1 1 50%;
+        }
+    }
+}
+
+@media (max-width: 930px){
+    header nav {
+        .social{
+            display: none !important;
+        }
+        .navigation{
+            width: 100% !important;
+        }
+    }
+    main{
+        .presentation div{
+            margin-top: 20vh !important;
+            // flex-direction: column-reverse !important;
+            position: relative;
+
+            .presentation__resume{
+                width: 100% !important;
+
+                h2{
+                    margin-top: -1vh !important;
+                    margin-bottom: 2vh !important;
+                }
+            }
+            .presentation__picture{
+                position: absolute !important;
+                top: 6vh;
+                right: 7vw;
+
+                img{
+                    height: 30vh !important;
+                    width: auto !important;
+                    z-index: -2;
+                }
+            }
+        }
+        .portfolio{
+            margin: -6vh auto 8vh !important;
+        }
+        .contact{
+            margin: 0.1vh auto 3vh !important;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    main .contact{
+        p{
+            width: 100% !important;
+        }
+    }
+}
+
+@media (max-width: 700px){
+    header nav {
+        .navigation{
+            font-size: 1.1rem !important;
+        }
+    }
+    main{
+        .portfolio{
+            margin: -15vh auto 6vh !important;
+    
+            .portfolio__list{
+                flex-direction: column !important;
+    
+                .portfolio__list__item__title{
+                    font-size: 1.4rem !important;
+                }
+                p{
+                    font-size: 1.2rem !important;
+                }
+                & > * {
+                    margin: 1vh 0 !important;
+                }
+                .portfolio__list__item{
+                    padding: 3.5vh 2.5vw 2vh !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 680px){
+
+    main{
+        .presentation div{
+            .presentation__resume{
+                p{
+                    margin-bottom: 7vh !important;
+                }
+                .presentation__resume__button{
+                    font-size: 1.5rem !important;
+                }
+            }
+        }
+        .portfolio {
+            margin: -9vh auto 6vh !important;
+        }
+    }
+}
+
+@media (max-width: 630px){
+    main{
+        .presentation{
+            margin: 6vh auto 0 !important;
+
+            div{
+                margin-top: -5vh !important;
+
+                .presentation__resume{ 
+                    h2{
+                        margin-top: 0 !important;
+                        margin-bottom: 0 !important;
+                    }
+                    h1{
+                        padding: 4vh 0 6vh;
+                    }
+                    p{
+                        margin-bottom: 12vh !important;
+                    }
+                }
+                .presentation__picture{
+                    display: none !important;
+                }
+            }
+        } 
+        .contact {
+            width: 90% !important;
+        }
+    }
+}
+
+
+@media (max-width: 400px){
+
+    main .presentation div .presentation__resume{
+        
+        p{
+            margin-bottom: 5vh !important;
+        }
+        .presentation__resume__button {
+            font-size: 1.3rem !important;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "colors.scss",
+        "theming/mixins.scss",
+        "theming/functions.scss",
+        "theming/colorDefinitions.scss",
+        "theming/light.scss",
+        "theming/functions.scss",
+        "theming/colorDefinitions.scss",
+        "theming/dark.scss",
+        "theming/functions.scss",
+        "theming/colorDefinitions.scss"
+    ],
+    "names": [],
+    "file": "colors.css"
+}

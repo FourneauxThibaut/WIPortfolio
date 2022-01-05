@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'big-john';
+  src: url("../storage/font/BigJohn.eot");
+  /* IE9 Compat Modes */
+  src: url("../storage/font/BigJohn.eot?#iefix") format("embedded-opentype"), url("../storage/font/BigJohn.woff") format("woff"), url("../storage/font/BigJohn.ttf") format("truetype"), url("../storage/font/BigJohn.svg") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'calibre';
+  src: url("../storage/font/Calibre-Medium.eot");
+  /* IE9 Compat Modes */
+  src: url("../storage/font/Calibre-Medium.eot?#iefix") format("embedded-opentype"), url("../storage/font/Calibre-Medium.woff") format("woff"), url("../storage/font/Calibre-Medium.ttf") format("truetype"), url("../storage/font/Calibre-Medium.svg") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'vivita';
+  src: url(../storage/font/VIVITA-Bold.otf) format("truetype");
+}
+/*# sourceMappingURL=font.css.map */

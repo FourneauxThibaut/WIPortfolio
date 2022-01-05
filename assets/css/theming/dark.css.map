@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "dark.scss",
+        "functions.scss",
+        "colorDefinitions.scss"
+    ],
+    "names": [],
+    "file": "dark.css"
+}

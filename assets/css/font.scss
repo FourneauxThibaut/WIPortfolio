@@ -1,0 +1,33 @@
+// big john
+@font-face {
+    font-family: 'big-john';
+    src: url('../storage/font/BigJohn.eot'); /* IE9 Compat Modes */
+    src: url('../storage/font/BigJohn.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../storage/font/BigJohn.woff') format('woff'), /* Modern Browsers */
+         url('../storage/font/BigJohn.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../storage/font/BigJohn.svg') format('svg'); /* Legacy iOS */
+}
+
+// calibre
+@font-face {
+    font-family: 'calibre';
+    src: url('../storage/font/Calibre-Medium.eot'); /* IE9 Compat Modes */
+    src: url('../storage/font/Calibre-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../storage/font/Calibre-Medium.woff') format('woff'), /* Modern Browsers */
+         url('../storage/font/Calibre-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../storage/font/Calibre-Medium.svg') format('svg'); /* Legacy iOS */
+}
+
+// vivita
+// @font-face {
+//     font-family: 'big-john';
+//     src: url('../storage/font/Calibre-Medium.eot'); /* IE9 Compat Modes */
+//     src: url('../storage/font/Calibre-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+//          url('../storage/font/Calibre-Medium.woff') format('woff'), /* Modern Browsers */
+//          url('../storage/font/Calibre-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+//          url('../storage/font/Calibre-Medium.svg') format('svg'); /* Legacy iOS */
+// }
+@font-face {
+    font-family: 'vivita';
+    src: url(../storage/font/VIVITA-Bold.otf) format('truetype');
+}

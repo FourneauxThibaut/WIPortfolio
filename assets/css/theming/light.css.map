@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "light.scss",
+        "functions.scss",
+        "colorDefinitions.scss"
+    ],
+    "names": [],
+    "file": "light.css"
+}
