@@ -6,6 +6,7 @@ html {
     @include generateThemeVariables;
     @include fluid-type($min_width, $max_width, $min_font, $max_font);
     height: 100%;
+    scroll-behavior: smooth;
 }
 
 body{

@@ -180,6 +180,7 @@ html {
   --theme-light-backgroundLight: #DDDDDD;
   --theme-dark-backgroundLight: #262626;
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 html {
