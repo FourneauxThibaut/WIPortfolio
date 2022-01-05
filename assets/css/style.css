@@ -352,6 +352,7 @@ header nav .navigation li {
 header nav .navigation li:not(:last-child)::after {
   content: "";
   position: absolute;
+  left: 0;
   bottom: -0.7rem;
   width: 0%;
   height: 1.5px;

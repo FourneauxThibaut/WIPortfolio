@@ -74,6 +74,7 @@ header{
                 &:not(:last-child)::after{
                       content: "";
                       position: absolute;
+                      left: 0;
                       bottom: -0.7rem;
                       @include theme(background-color, textDark);
                       width: 0%;
