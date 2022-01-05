@@ -112,7 +112,7 @@
     }
     main{
         .portfolio{
-            margin: -15vh auto 6vh !important;
+            margin: -7vh auto 6vh !important;
     
             .portfolio__list{
                 flex-direction: column !important;
@@ -147,8 +147,8 @@
                 }
             }
         }
-        .portfolio {
-            margin: -9vh auto 6vh !important;
+        .portfolio{
+            margin: 2vh auto 6vh !important;
         }
     }
 }
@@ -186,6 +186,51 @@
 
 
 @media (max-width: 400px){
+    header nav{
+        .navigation{
+            width: 115% !important;
+
+            .navigation__theme{
+                div{
+                    #moon{
+                        left: 15% !important;
+                    }
+                    #sun{
+                        left: 16% !important;
+                    }
+                }
+                .toggleOn {
+                    .ball{
+                        left: 15% !important;
+                    }
+                    #sun{
+                        left: 16% !important;
+                    }
+                    #moon{
+                        cursor: pointer;
+                        left: 15% !important;
+                    }
+                }
+                
+                .toggleOff {
+                    .ball{
+                        left: 15% !important;
+                    }
+                    #sun{
+                        cursor: pointer;
+                        left: 16% !important;
+                    }
+                    #moon{
+                        left: 15% !important;
+                    }
+                }
+
+                &::after{
+                    display: none;
+                }
+            }
+        }
+    }
 
     main .presentation div .presentation__resume{
         

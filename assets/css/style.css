@@ -98,7 +98,7 @@
     font-size: 1.1rem !important;
   }
   main .portfolio {
-    margin: -15vh auto 6vh !important;
+    margin: -7vh auto 6vh !important;
   }
   main .portfolio .portfolio__list {
     -webkit-box-orient: vertical !important;
@@ -128,7 +128,7 @@
     font-size: 1.5rem !important;
   }
   main .portfolio {
-    margin: -9vh auto 6vh !important;
+    margin: 2vh auto 6vh !important;
   }
 }
 
@@ -158,6 +158,38 @@
 }
 
 @media (max-width: 400px) {
+  header nav .navigation {
+    width: 115% !important;
+  }
+  header nav .navigation .navigation__theme div #moon {
+    left: 15% !important;
+  }
+  header nav .navigation .navigation__theme div #sun {
+    left: 16% !important;
+  }
+  header nav .navigation .navigation__theme .toggleOn .ball {
+    left: 15% !important;
+  }
+  header nav .navigation .navigation__theme .toggleOn #sun {
+    left: 16% !important;
+  }
+  header nav .navigation .navigation__theme .toggleOn #moon {
+    cursor: pointer;
+    left: 15% !important;
+  }
+  header nav .navigation .navigation__theme .toggleOff .ball {
+    left: 15% !important;
+  }
+  header nav .navigation .navigation__theme .toggleOff #sun {
+    cursor: pointer;
+    left: 16% !important;
+  }
+  header nav .navigation .navigation__theme .toggleOff #moon {
+    left: 15% !important;
+  }
+  header nav .navigation .navigation__theme::after {
+    display: none;
+  }
   main .presentation div .presentation__resume p {
     margin-bottom: 5vh !important;
   }
