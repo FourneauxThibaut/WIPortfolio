@@ -14,7 +14,6 @@ document.getElementById('npm').onclick = function() {
 let portfolioLink = document.querySelectorAll('.portfolio__list__item__footer__link');
 portfolioLink.forEach(element => {
       if (element.children.length <= 1){
-            console.log('oui');
             element.querySelector('li').style.marginLeft = "50%"
       }
 });

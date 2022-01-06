@@ -33,7 +33,7 @@ function toggleThemeButton() {
 }
 
 function setThemewithCookiesMemory() {
-      if ( (Cookies.get('theme') == undefined) ) return console.log('Cookies not set!')
+      if ( (Cookies.get('theme') == undefined) ) return turnThemeDark()
       if ( Cookies.get('theme') === 'light' ) return turnThemeLight()
       else return turnThemeDark()
 }
