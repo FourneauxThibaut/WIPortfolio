@@ -63,9 +63,6 @@
     }
     main{
         .presentation div{
-            margin-top: 20vh !important;
-            // flex-direction: column-reverse !important;
-            position: relative;
 
             .presentation__resume{
                 width: 100% !important;
@@ -76,15 +73,7 @@
                 }
             }
             .presentation__picture{
-                position: absolute !important;
-                top: 6vh;
-                right: 7vw;
-
-                img{
-                    height: 30vh !important;
-                    width: auto !important;
-                    z-index: -2;
-                }
+                display: none !important;
             }
         }
         .contact{
@@ -123,7 +112,7 @@
                     margin: 1vh 0 !important;
                 }
                 .portfolio__list__item{
-                    padding: 3.5vh 2.5vw 2vh !important;
+                    padding: 3.5vh 2.5vh 2vh !important;
                 }
             }
         }
@@ -149,7 +138,6 @@
 @media (max-width: 630px){
     main{
         .presentation{
-            margin: 6vh auto 0 !important;
 
             div{
                 margin-top: -5vh !important;
@@ -225,13 +213,15 @@
         }
     }
 
-    main .presentation div .presentation__resume{
-        
-        p{
-            margin-bottom: 5vh !important;
+    main .presentation{
+
+        div .presentation__resume{
+            p{
+                margin-bottom: 5vh !important;
+            }
+            .presentation__resume__button {
+                font-size: 1.3rem !important;
+            }
         }
-        .presentation__resume__button {
-            font-size: 1.3rem !important;
-        }
-    }
+    } 
 }

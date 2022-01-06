@@ -37,10 +37,6 @@
   header nav .navigation {
     width: 100% !important;
   }
-  main .presentation div {
-    margin-top: 20vh !important;
-    position: relative;
-  }
   main .presentation div .presentation__resume {
     width: 100% !important;
   }
@@ -49,14 +45,7 @@
     margin-bottom: 2vh !important;
   }
   main .presentation div .presentation__picture {
-    position: absolute !important;
-    top: 6vh;
-    right: 7vw;
-  }
-  main .presentation div .presentation__picture img {
-    height: 30vh !important;
-    width: auto !important;
-    z-index: -2;
+    display: none !important;
   }
   main .contact {
     margin: 0.1vh auto 3vh !important;
@@ -89,7 +78,7 @@
     margin: 1vh 0 !important;
   }
   main .portfolio .portfolio__list .portfolio__list__item {
-    padding: 3.5vh 2.5vw 2vh !important;
+    padding: 3.5vh 2.5vh 2vh !important;
   }
 }
 
@@ -103,9 +92,6 @@
 }
 
 @media (max-width: 630px) {
-  main .presentation {
-    margin: 6vh auto 0 !important;
-  }
   main .presentation div {
     margin-top: -5vh !important;
   }

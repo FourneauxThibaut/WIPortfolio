@@ -58,10 +58,6 @@
   header nav .navigation {
     width: 100% !important;
   }
-  main .presentation div {
-    margin-top: 20vh !important;
-    position: relative;
-  }
   main .presentation div .presentation__resume {
     width: 100% !important;
   }
@@ -70,14 +66,7 @@
     margin-bottom: 2vh !important;
   }
   main .presentation div .presentation__picture {
-    position: absolute !important;
-    top: 6vh;
-    right: 7vw;
-  }
-  main .presentation div .presentation__picture img {
-    height: 30vh !important;
-    width: auto !important;
-    z-index: -2;
+    display: none !important;
   }
   main .contact {
     margin: 0.1vh auto 3vh !important;
@@ -110,7 +99,7 @@
     margin: 1vh 0 !important;
   }
   main .portfolio .portfolio__list .portfolio__list__item {
-    padding: 3.5vh 2.5vw 2vh !important;
+    padding: 3.5vh 2.5vh 2vh !important;
   }
 }
 
@@ -124,9 +113,6 @@
 }
 
 @media (max-width: 630px) {
-  main .presentation {
-    margin: 6vh auto 0 !important;
-  }
   main .presentation div {
     margin-top: -5vh !important;
   }
@@ -247,8 +233,10 @@ body {
 }
 
 header nav {
-  width: 94%;
-  margin: 7vh auto 4vh;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -258,6 +246,17 @@ header nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 99999;
+}
+
+.light header nav {
+  background-color:  #F8F8F8 ;
+  background-color:  var(--theme-light-backgroundDark, #F8F8F8) ;
+}
+
+.dark header nav {
+  background-color:  #1F1E1E ;
+  background-color:  var(--theme-dark-backgroundDark, #1F1E1E) ;
 }
 
 header nav .social {
@@ -272,7 +271,7 @@ header nav .social {
 header nav .social a svg {
   -webkit-transition-duration: 0.6s;
           transition-duration: 0.6s;
-  height: 2.7rem;
+  height: 1.8rem;
 }
 
 .light header nav .social a svg {
@@ -308,21 +307,21 @@ header nav .navigation {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   font-family: big-john, sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   font-weight: bold;
 }
 
-.light header nav .navigation .current {
+.light header nav .navigation .active {
   color:  #E76639 ;
   color:  var(--theme-light-color, #E76639) ;
 }
 
-.dark header nav .navigation .current {
+.dark header nav .navigation .active {
   color:  #D16D4A ;
   color:  var(--theme-dark-color, #D16D4A) ;
 }
 
-header nav .navigation .current::after {
+header nav .navigation .active::after {
   content: "";
   position: absolute;
   left: 0;
@@ -333,12 +332,12 @@ header nav .navigation .current::after {
           transition-duration: 0.4s;
 }
 
-.light header nav .navigation .current::after {
+.light header nav .navigation .active::after {
   background-color:  #E76639 ;
   background-color:  var(--theme-light-color, #E76639) ;
 }
 
-.dark header nav .navigation .current::after {
+.dark header nav .navigation .active::after {
   background-color:  #D16D4A ;
   background-color:  var(--theme-dark-color, #D16D4A) ;
 }
@@ -434,7 +433,7 @@ header nav .navigation .navigation__theme div .ball {
   background-color:  var(--theme-dark-textDark, #FFFFFF) ;
 }
 
-header nav .navigation .navigation__theme div #moon, header nav .navigation .navigation__theme div #sun {
+header nav .navigation .navigation__theme div .fa-moon, header nav .navigation .navigation__theme div .fa-sun {
   position: absolute;
   top: 0;
   -webkit-transition: left 0.6s;
@@ -443,11 +442,11 @@ header nav .navigation .navigation__theme div #moon, header nav .navigation .nav
           animation-timing-function: ease;
 }
 
-header nav .navigation .navigation__theme div #moon {
+header nav .navigation .navigation__theme div .fa-moon {
   left: 0;
 }
 
-header nav .navigation .navigation__theme div #sun {
+header nav .navigation .navigation__theme div .fa-sun {
   left: 53%;
 }
 
@@ -471,11 +470,11 @@ header nav .navigation .navigation__theme .toggleOn .ball {
   left: 1%;
 }
 
-header nav .navigation .navigation__theme .toggleOn #sun {
+header nav .navigation .navigation__theme .toggleOn .fa-sun {
   left: 0%;
 }
 
-header nav .navigation .navigation__theme .toggleOn #moon {
+header nav .navigation .navigation__theme .toggleOn .fa-moon {
   cursor: pointer;
   left: 0%;
 }
@@ -484,12 +483,12 @@ header nav .navigation .navigation__theme .toggleOff .ball {
   left: 53%;
 }
 
-header nav .navigation .navigation__theme .toggleOff #sun {
+header nav .navigation .navigation__theme .toggleOff .fa-sun {
   cursor: pointer;
   left: 53%;
 }
 
-header nav .navigation .navigation__theme .toggleOff #moon {
+header nav .navigation .navigation__theme .toggleOff .fa-moon {
   left: 53%;
 }
 
@@ -532,7 +531,8 @@ main h2 {
 }
 
 main .presentation {
-  margin: 12vh auto 0;
+  padding: 17.5vh 0;
+  margin: 0 auto;
   width: 70%;
   font-size: 1.2rem;
   min-height: 78vh;
@@ -545,14 +545,18 @@ main .presentation div {
 }
 
 main .presentation .presentation__resume {
-  margin-top: 10vh;
+  padding-top: 6vh;
   width: 55%;
+}
+
+main .presentation .presentation__resume h2 {
+  font-size: 6.5rem;
 }
 
 main .presentation .presentation__resume h1 {
   padding: 2vh 0 4vh;
   font-size: 2.5rem;
-  line-height: 1.15;
+  line-height: 1.20;
   font-family: big-john, sans-serif;
 }
 
@@ -570,7 +574,7 @@ main .presentation .presentation__resume p {
   width: 90%;
   letter-spacing: 0.05rem;
   word-spacing: 0.1rem;
-  margin-bottom: 7vh;
+  margin: 1.7vh 0 6vh;
 }
 
 .light main .presentation .presentation__resume p {
@@ -584,8 +588,8 @@ main .presentation .presentation__resume p {
 }
 
 main .presentation .presentation__resume .presentation__resume__button {
-  padding: 2.7vh 2.7vw 1.8vh 2.7vw;
-  font-size: 1.9rem;
+  padding: 0.8rem 1.2rem 0.5rem;
+  font-size: 1.05rem;
   border-radius: 5px;
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
@@ -614,6 +618,8 @@ main .presentation .presentation__resume .presentation__resume__button {
 main .presentation .presentation__resume .presentation__resume__button:hover {
   color: white;
   outline-offset: 4px;
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
 }
 
 .light main .presentation .presentation__resume .presentation__resume__button:hover {
@@ -633,7 +639,7 @@ main .presentation .presentation__picture {
 
 main .presentation .presentation__picture img {
   position: absolute;
-  top: 58%;
+  top: 52%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -642,34 +648,15 @@ main .presentation .presentation__picture img {
 }
 
 main .portfolio {
-  margin: 4vh auto 17vh;
+  padding-bottom: 10vh;
+  margin: 0 auto 0;
   width: 70%;
   font-size: 1.2rem;
 }
 
 main .portfolio h2 {
+  padding-top: 15vh !important;
   position: relative;
-}
-
-main .portfolio h2::after {
-  position: absolute;
-  top: 42%;
-  left: 25%;
-  -webkit-transform: translateY(-40%);
-          transform: translateY(-40%);
-  content: "";
-  width: 80px;
-  height: 1px;
-}
-
-.light main .portfolio h2::after {
-  background-color:  #7c7c7c ;
-  background-color:  var(--theme-light-textLight, #7c7c7c) ;
-}
-
-.dark main .portfolio h2::after {
-  background-color:  #868686 ;
-  background-color:  var(--theme-dark-textLight, #868686) ;
 }
 
 main .portfolio .portfolio__subtitle {
@@ -693,13 +680,13 @@ main .portfolio .portfolio__list > * {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 30%;
           flex: 1 1 30%;
-  margin: 3vh 1vw;
+  margin: 3vh 1.5vh;
 }
 
 main .portfolio .portfolio__list .portfolio__list__item {
   height: 100%;
   border-radius: 3px;
-  padding: 3.5vh 2.5vw 0.1vh;
+  padding: 3.5vh 2.5vh 0.1vh;
   -webkit-box-shadow: inset 0px 0px 15px -12px rgba(0, 0, 0, 0.5), inset 0px 0px 15px -12px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px 15px -12px rgba(0, 0, 0, 0.5), inset 0px 0px 15px -12px rgba(0, 0, 0, 0.5);
 }
@@ -736,6 +723,7 @@ main .portfolio .portfolio__list .portfolio__list__item .portfolio__list__item__
 }
 
 main .portfolio .portfolio__list .portfolio__list__item p {
+  text-transform: capitalize;
   margin-top: 3vh;
   font-size: 0.95rem;
 }
@@ -833,7 +821,8 @@ main .portfolio .portfolio__list .portfolio__list__item .portfolio__list__item__
 }
 
 main .contact {
-  margin: -6vh auto 3vh;
+  padding: 18vh 0 8vh;
+  margin: 0 auto;
   width: 70%;
   text-align: center;
 }
@@ -845,11 +834,11 @@ main .contact h2 {
 main .contact h3 {
   font-size: 2.5rem;
   font-family: big-john, sans-serif;
-  padding: 3vh 0 5vh;
+  padding: 5vh 0 8vh;
 }
 
 main .contact p {
-  margin: 0 auto 8vh;
+  margin: 0 auto 12vh;
   width: 56%;
 }
 
@@ -864,7 +853,7 @@ main .contact p {
 }
 
 main .contact a {
-  padding: 2.5vh 2.7vw 2vh 2.7vw;
+  padding: 2.5vh 2.7vh 2vh 2.7vh;
   border-radius: 4px;
   -webkit-transition-duration: 0.6s;
           transition-duration: 0.6s;
@@ -908,7 +897,8 @@ main .contact a:hover {
 }
 
 footer {
-  margin: 14vh auto 5vh;
+  margin: 14vh auto 0;
+  padding-bottom: 7vh;
   width: 40%;
   text-align: center;
 }

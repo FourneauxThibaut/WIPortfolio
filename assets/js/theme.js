@@ -1,5 +1,5 @@
 document.documentElement.classList.add('dark')
-      
+
 function turnThemeLight() {
       document.getElementById('toggleTheme').classList.remove('toggleOn')
       document.documentElement.classList.remove('dark')
@@ -33,9 +33,7 @@ function toggleThemeButton() {
 }
 
 function setThemewithCookiesMemory() {
-      if ( (Cookies.get('theme') == undefined) ) return turnThemeDark()
-      if ( Cookies.get('theme') === 'light' ) return turnThemeLight()
-      else return turnThemeDark()
+      return Cookies.get('theme') === 'light' ? turnThemeLight() : turnThemeDark()
 }
 
 setThemewithCookiesMemory()

@@ -18,11 +18,15 @@ body{
 header{
 
     nav{
-        width: 94%;
-        margin: 7vh auto 4vh;
+        top: 0;
+        position: fixed;
+        width: 100%;
+        height: 10vh;
+        @include theme(background-color, backgroundDark);
         display: flex;
         justify-content: space-between;
         align-items: center;
+        z-index: 99999;
 
         .social{
             min-width: 33%;
@@ -33,7 +37,7 @@ header{
                 svg{
                     @include theme(fill, textDark);
                     transition-duration: 0.6s;
-                    height: 2.7rem;
+                    height: 1.8rem;
                 }  
                 &:hover{
                     svg{
@@ -49,10 +53,10 @@ header{
             display: flex;
             justify-content: space-around;
             font-family: big-john, sans-serif;
-            font-size: 1.4rem;
+            font-size: 1.1rem;
             font-weight: bold;
 
-            .current{
+            .active{
                 @include theme(color, color);
 
                 &::after{
@@ -110,16 +114,16 @@ header{
                         transition: left 0.6s;
                         animation-timing-function: ease;
                     }
-                    #moon, #sun{
+                    .fa-moon, .fa-sun{
                         position: absolute;
                         top: 0;
                         transition: left 0.6s;
                         animation-timing-function: ease;
                     }
-                    #moon{
+                    .fa-moon{
                         left: 0;
                     }
-                    #sun{
+                    .fa-sun{
                         left: 53%;
                     }
 
@@ -134,10 +138,10 @@ header{
                     .ball{
                         left: 1%;
                     }
-                    #sun{
+                    .fa-sun{
                         left: 0%;
                     }
-                    #moon{
+                    .fa-moon{
                         cursor: pointer;
                         left: 0%;
                     }
@@ -147,11 +151,11 @@ header{
                     .ball{
                         left: 53%;
                     }
-                    #sun{
+                    .fa-sun{
                         cursor: pointer;
                         left: 53%
                     }
-                    #moon{
+                    .fa-moon{
                         left: 53%
                     }
                 }
@@ -181,7 +185,8 @@ main{
     }
 
     .presentation{
-        margin: 12vh auto 0;
+        padding: 17.5vh 0;
+        margin: 0 auto;
         width: 70%;
         font-size: 1.2rem;
         min-height: 78vh;
@@ -190,13 +195,16 @@ main{
             display: flex;
         }
         .presentation__resume{
-            margin-top: 10vh;
+            padding-top: 6vh;
             width: 55%;
-
+            
+            h2{
+                font-size: 6.5rem;
+            }
             h1{
                 padding: 2vh 0 4vh;
                 font-size: 2.5rem;
-                line-height: 1.15;
+                line-height: 1.20;
                 font-family: big-john, sans-serif;
 
                 span{
@@ -208,20 +216,21 @@ main{
                 letter-spacing: 0.05rem;
                 word-spacing: 0.1rem;
                 @include theme(color, textLight);
-                margin-bottom: 7vh;
+                margin: 1.7vh 0 6vh;
             }
             .presentation__resume__button{
-                padding: 2.7vh 2.7vw 1.8vh 2.7vw;
-                font-size: 1.9rem;
+                padding: 0.8rem 1.2rem 0.5rem;
+                font-size: 1.05rem;
                 @include theme(color, color);
                 @include theme(outline, color, 2px solid);
                 border-radius: 5px;
                 transition-duration: 0.4s;
 
                 &:hover{     
-                      color: white;
-                      @include theme(background-color, color);
-                      outline-offset: 4px;
+                    color: white;
+                    @include theme(background-color, color);
+                    outline-offset: 4px;
+                    transition-duration: 0.6s;
                 }
             }
         }
@@ -231,7 +240,7 @@ main{
 
             img{
                 position: absolute;
-                top: 58%;
+                top: 52%;
                 left: 50%;
                 transform: translate(-50%, -50%);
                 height: auto;
@@ -240,23 +249,15 @@ main{
         }
     }
     .portfolio{
-        margin: 4vh auto 17vh;
+        padding-bottom: 10vh;
+        margin: 0 auto 0;
         width: 70%;
         font-size: 1.2rem;
 
         h2{
+            padding-top: 15vh !important;
             position: relative;
 
-            &::after{
-                position: absolute;
-                top: 42%;
-                left: 25%;
-                transform: translateY(-40%);
-                content: "";
-                width: 80px;
-                height: 1px;
-                @include theme(background-color, textLight);
-            }
         }
         .portfolio__subtitle{
             margin: 2vh 0 6vh;
@@ -270,14 +271,14 @@ main{
             
             & > * {
                 flex: 1 1 30%;
-                margin: 3vh 1vw;
+                margin: 3vh 1.5vh;
             }
             
             .portfolio__list__item{
                 height: 100%;
                 @include theme(background-color, backgroundLight);
                 border-radius: 3px;
-                padding: 3.5vh 2.5vw 0.1vh;
+                padding: 3.5vh 2.5vh 0.1vh;
                 -webkit-box-shadow: inset 0px 0px 15px -12px rgba(0,0,0,0.5), inset 0px 0px 15px -12px rgba(0,0,0,0.5); 
                 box-shadow: 0px 0px 15px -12px rgba(0,0,0,0.5), inset 0px 0px 15px -12px rgba(0,0,0,0.5);
 
@@ -289,6 +290,7 @@ main{
                     font-family: big-john, sans-serif;
                 }
                 p{
+                    text-transform: capitalize;
                     margin-top: 3vh;
                     font-size: 0.95rem;
                 }
@@ -341,7 +343,8 @@ main{
         }
     }
     .contact{
-        margin: -6vh auto 3vh;
+        padding: 18vh 0 8vh;
+        margin: 0 auto;
         width: 70%;
         text-align: center;
 
@@ -351,15 +354,15 @@ main{
         h3{
             font-size: 2.5rem;
             font-family: big-john, sans-serif;
-            padding: 3vh 0 5vh;
+            padding: 5vh 0 8vh;
         }
         p{
-            margin: 0 auto 8vh;
+            margin: 0 auto 12vh;
             width: 56%;
             @include theme(color, textLight);
         }
         a{
-            padding: 2.5vh 2.7vw 2vh 2.7vw;
+            padding: 2.5vh 2.7vh 2vh 2.7vh;
             border-radius: 4px;
             @include theme(outline, color, 2px solid);
             @include theme(color, color);
@@ -375,7 +378,8 @@ main{
     }
 }
 footer{
-    margin: 14vh auto 5vh;
+    margin: 14vh auto 0;
+    padding-bottom: 7vh;
     width: 40%;
     text-align: center;
 
