@@ -2,11 +2,25 @@
   header nav .navigation {
     width: 55% !important;
   }
+  .portfolio__list__item__footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .portfolio__list__item__footer .portfolio__list__item__footer--right {
+    margin-bottom: 3vh;
+  }
 }
 
 @media (max-width: 1300px) {
   main .presentation div .presentation__picture img {
     width: 350px !important;
+  }
+  .portfolio__list__item__footer__link {
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
   }
 }
 

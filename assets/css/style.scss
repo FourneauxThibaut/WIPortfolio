@@ -2,6 +2,11 @@
 @import './fluid-font';
 @import './responsive';
 
+::selection{
+    @include theme(color, textDark);
+    @include theme(background-color, color);
+}
+
 html {
     @include generateThemeVariables;
     @include fluid-type($min_width, $max_width, $min_font, $max_font);
@@ -273,6 +278,10 @@ main{
                 flex: 1 1 30%;
                 --gap: 2vh;
                 margin: var(--gap) var(--gap) 0 0;
+                @include theme(background-color, backgroundLight);
+                box-shadow: 0px 0px 15px -12px rgba(0, 0, 0, 0.5), 
+                    inset 0px 0px 15px -12px rgba(0, 0, 0, 0.5);
+                border-radius: 4px;
             }
 
             .portfolio__list__item{
@@ -280,10 +289,6 @@ main{
                 grid-template-columns: 1fr 1fr;
                 grid-template-rows: auto;
                 padding: 4vh 2rem;
-                @include theme(background-color, backgroundLight);
-                border-radius: 4px;
-                box-shadow: 0px 0px 15px -12px rgba(0, 0, 0, 0.5), 
-                    inset 0px 0px 15px -12px rgba(0, 0, 0, 0.5);
                 
                 .portfolio__list__item__title {
                     grid-column: 1 / span 2;
@@ -301,28 +306,32 @@ main{
                     grid-row: 2 / 3;
                     margin-bottom: 4vh;
                 }
-                .portfolio__list__item__footer--right, .portfolio__list__item__footer--left {
+                .portfolio__list__item__footer {
+                    grid-column: 1 / span 2;
+                    grid-row: 3 / 4;
+                    display: flex;
+
                     h4{
                         @include theme(color, textDark);
                         opacity: 0.5;
                         margin-bottom: 1.5vh;
                     }
                 }
+                .portfolio__list__item__footer--right, .portfolio__list__item__footer--left {
+                    width: 50%;
+                }
                 .portfolio__list__item__footer__tag {
                     margin-top: 2vh;
                     display: flex;
-                    flex-wrap: wrap;
+                    flex-direction: column;
                     line-height: 1.5rem;
 
                     li{                        
                         padding: 0.1vh 0.5vh;
-
-                        &:first-child{ 
-                            padding: 0.1vh 0.5vh 0.1vh 0;
-                        }
                     }
                 }
                 .portfolio__list__item__footer__link {
+                    // width: 100%;
                     display: flex;
                     justify-content: flex-end;
 
