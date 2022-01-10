@@ -17,3 +17,4 @@ portfolioLink.forEach(element => {
             element.querySelector('li').style.marginLeft = "50%"
       }
 });
+
